@@ -5,6 +5,9 @@ class Header extends React.Component {
     return(
       <header>
         <p>Header</p>
+        <button onClick={this.props.clickHandler}>
+          add
+        </button>
       </header>
     )
   }
