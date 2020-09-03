@@ -1,35 +1,20 @@
-import React from "react";
-import Header from './views/header';
-import Content from './views/content';
-import Footer from './views/footer';
+import React, { useState } from "react";
+import { useMediaPredicate } from "react-media-hook";
+import Pc from './views/pc';
+//import Sp from './views/sp';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { menuVisible: false, otherVisible: false };
-    this.menuEvent = this.menuEvent.bind(this);
-    this.otherEvent = this.otherEvent.bind(this);
+function App() {
+  const [menuVisible, setMenuVisible] = useState(false)
+  function switchMenuVisible() {
+    setMenuVisible(!menuVisible)
   }
-  menuEvent(event) {
-    this.setState({ menuVisible: !this.state.menuVisible });
-  }
-  otherEvent(event) {
-    this.setState({ otherVisible: !this.state.otherVisible });
-  }
+  const biggerThan768 = useMediaPredicate("(min-width: 768px)");
 
-
-  render() {
-    return (
-      <div className="App">
-        <Header clickHandler={this.menuEvent} />
-        State: {`${this.state.menuVisible}`}
-        <br />
-        OtherState: {`${this.state.otherVisible}`}
-        <Content/>
-        <Footer/>
-      </div>
-    );
-  }
+  return (
+    <div>
+      {biggerThan768 && <Pc switchMenuVisible={() => switchMenuVisible} menuVisible={menuVisible}/>}
+    </div>
+  );
 }
 
 export default App;
