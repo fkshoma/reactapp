@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSprings, animated, config } from "react-spring";
 
 const Header:React.FC<{switchMenuVisible: any}> = ({switchMenuVisible}) => {

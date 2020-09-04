@@ -65,8 +65,8 @@ const Nav:React.FC<{switchMenuVisible: any, menuVisible: any}> = ({switchMenuVis
       <Closenav onClick={switchMenuVisible}>X</Closenav>
       <ul>
         {itemsAnimation.map(({ item, key, props }) => {
-          var item_str = item;
-          if(item == "Home") {
+          let item_str = item;
+          if(item === "Home") {
             item_str = "";
           }
           return (
