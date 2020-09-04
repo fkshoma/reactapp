@@ -5,7 +5,7 @@ class Header extends React.Component {
     return(
       <header>
         <p>Header</p>
-        <button onClick={this.props.clickHandler}>
+        <button onClick={this.props.switchMenuVisible}>
           add
         </button>
       </header>

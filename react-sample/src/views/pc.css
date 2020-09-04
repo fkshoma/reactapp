@@ -1,0 +1,21 @@
+.site-title {
+  margin: 0 auto;
+}
+
+.cursor-crosshair {
+  cursor: crosshair;
+}
+
+.justify-start-parent{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.margin-0-auto {
+  margin: 0 auto;
+}
+
+li a{
+  display:block;
+}
+

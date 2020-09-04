@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useMediaPredicate } from "react-media-hook";
 import Pc from './views/pc';
 //import Sp from './views/sp';
+import './App.css';
 
 function App() {
   const [menuVisible, setMenuVisible] = useState(false)

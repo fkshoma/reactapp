@@ -21,10 +21,9 @@ class Sp extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header clickHandler={this.menuEvent} />
+        <Header switchMenuVisible={this.menuEvent} />
         State: {`${this.state.menuVisible}`}
         <br />
-        OtherState: {`${this.state.otherVisible}`}
         <Content/>
         <Footer/>
       </div>
