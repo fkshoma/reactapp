@@ -1,7 +1,7 @@
 import React from "react";
 import { useSprings, animated, config } from "react-spring";
 
-const Header:React.FC<{switchMenuVisible: any}> = ({switchMenuVisible}) => {
+const Header:React.FC<{switchMenuVisible: any, menuVisible: any}> = ({switchMenuVisible, menuVisible}) => {
   const msg = "サイト名"
   const [springs, set] = useSprings(msg.length, (idx) => ({
     config: config.wobbly,

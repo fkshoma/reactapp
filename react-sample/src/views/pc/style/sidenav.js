@@ -6,7 +6,6 @@ export const Sidenav = styled(animated.nav)`
   z-index: 1;
   background-color: #2c3f4a;
   margin: 0;
-  height: 100%;
   width: 250px;
   overflow-y: auto;
   ul {
