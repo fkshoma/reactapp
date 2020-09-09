@@ -2,16 +2,16 @@ import React from "react";
 import { useSprings, animated, config } from "react-spring";
 
 const Header:React.FC<{switchMenuVisible: any, menuVisible: any}> = ({switchMenuVisible, menuVisible}) => {
-  const msg = "サイト名"
-  const msg2 = "sample test"
+  const msg = "万事屋ショウマ"
+  const msg2 = "for catch copy"
   const [springs, set] = useSprings(msg.length, (idx) => ({
     config: config.wobbly,
     fontSize: "24pt",
-    color: "silver"
+    color: "lemonchiffon"
   }));
   const [subSprings, setSub] = useSprings(msg2.length, (idx) => ({
     config: config.wobbly,
-    fontSize: "24pt",
+    fontSize: "20pt",
     color: "white",
     margin: "5px",
     lineHeight: "15px"
@@ -24,8 +24,8 @@ const Header:React.FC<{switchMenuVisible: any, menuVisible: any}> = ({switchMenu
           <animated.span
             key={"msg" + idx.toString()}
             className="cursor-crosshair"
-            onMouseEnter={e => set(i => (i === idx ? { fontSize: "32pt", color: "white" } : {}))}
-            onMouseLeave={e => set(i => (i === idx ? { fontSize: "24pt", color: "silver" } : {}))}
+            onMouseEnter={e => set(i => (i === idx ? { fontSize: "32pt", color: "orange" } : {}))}
+            onMouseLeave={e => set(i => (i === idx ? { fontSize: "24pt", color: "lemonchiffon" } : {}))}
             style={{ corsor: "none", verticalAlign: "top",  ...item }} >
             {msg[idx]}
           </animated.span>
@@ -37,7 +37,7 @@ const Header:React.FC<{switchMenuVisible: any, menuVisible: any}> = ({switchMenu
             key={"msg2" + idx.toString()}
             className="cursor-crosshair"
             onMouseEnter={e => setSub(i => (i === idx ? { fontSize: "32pt", margin: "30px", lineHeight: "60px" } : {}))}
-            onMouseLeave={e => setSub(i => (i === idx ? { fontSize: "24pt", margin: "5px", lineHeight: "15px" } : {}))}
+            onMouseLeave={e => setSub(i => (i === idx ? { fontSize: "20pt", margin: "5px", lineHeight: "15px" } : {}))}
             style={{ corsor: "none", verticalAlign: "top",  ...item }} >
             {msg2[idx]}
           </animated.span>

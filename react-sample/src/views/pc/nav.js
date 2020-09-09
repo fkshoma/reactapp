@@ -9,7 +9,7 @@ import {
 } from "react-spring";
 import { Link} from 'react-router-dom';
 
-import { Sidenav, Closenav } from "./style/sidenav";
+import { Sidenav } from "./style/sidenav";
 
 const sidenavItems = ["Home", "About", "Work", "Contact"];
 

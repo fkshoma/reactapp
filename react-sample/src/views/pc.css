@@ -1,5 +1,5 @@
 .site-title {
-  margin: 0 auto;
+  margin: 5px auto;
 }
 
 .cursor-crosshair {
@@ -22,6 +22,11 @@ li a{
 header {
   background-size:100% auto;
   background-image:url('./pc/images/header_back.jpg')
+}
+
+footer {
+  color: white;
+  background-color: black;
 }
 
 .menu-btn {
