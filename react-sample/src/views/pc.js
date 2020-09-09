@@ -12,8 +12,6 @@ const Pc:React.FunctionComponent<{switchMenuVisible: any, menuVisible: any}> = (
     <div className="App">
       <Router>
         <Header switchMenuVisible={switchMenuVisible()} menuVisible={menuVisible}/>
-        menuVisible: {`${menuVisible}`}
-        <br />
         <div className="justify-start-parent">
           <Nav switchMenuVisible={switchMenuVisible()} menuVisible={menuVisible}/>
           <Content menuVisible={menuVisible}/>

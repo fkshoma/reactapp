@@ -60,7 +60,6 @@ const Nav:React.FC<{switchMenuVisible: any, menuVisible: any}> = ({switchMenuVis
       }}
     >
       {resizeListener}
-      <Closenav onClick={switchMenuVisible}>X</Closenav>
       <ul>
         {itemsAnimation.map(({ item, key, props }) => {
           let item_str = item;

@@ -19,3 +19,11 @@ li a{
   display:block;
 }
 
+header {
+  background-size:100% auto;
+  background-image:url('./pc/images/header_back.jpg')
+}
+
+.menu-btn {
+  float: left;
+}
